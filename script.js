@@ -10,7 +10,7 @@ async function hashPasscode(input){
 function checkAuth(){
   if(sessionStorage.getItem(AUTH_KEY) === '1'){
     document.querySelectorAll('.protected').forEach(el => el.classList.remove('protected'));
-    document.getElementById('unlockBtn').textContent = '🔓 Unlocked';
+    document.getElementById('unlockBtn').textContent = '🔓 Portfolio';
   }
 }
 
