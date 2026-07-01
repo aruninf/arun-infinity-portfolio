@@ -14,7 +14,10 @@
 <nav>
   <div class="wrap">
     <div class="brand">Arun Kumar <span>· Infinity</span></div>
-    <div class="nav-links">
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
       <a href="#journey">Journey</a>
       <a href="#portfolio">Portfolio</a>
       <a href="#recognition">Recognition</a>
@@ -112,19 +115,13 @@
   </div>
 </section>
 
-<section class="reveal protected">
+<section class="reveal" id="currentlySection" style="display:none;">
   <div class="wrap">
     <div class="sec-head">
       <h2>Currently</h2>
       <div class="sec-tag">Whitetower Digital</div>
     </div>
-    <div class="journey">
-      <div class="jstep now">
-        <div class="jstep-tag">Nov 2025 — Present</div>
-        <h3>React Native Developer, full-time on the Whitetower Digital account (client: Villar)</h3>
-        <p>Delivered <strong style="color:var(--ink);">Disport</strong> and <strong style="color:var(--ink);">Medhub</strong> — both shipped on schedule. Currently building <strong style="color:var(--ink);">T1</strong>, an electrician job-management app, alongside the rest of the account's work.</p>
-      </div>
-    </div>
+    <div class="journey" id="currentlyContent"></div>
   </div>
 </section>
 
@@ -142,154 +139,7 @@
       <button class="filter-pill" data-filter="whitetower">Whitetower</button>
     </div>
 
-    <div class="grid" id="grid">
-      <!-- Appifany -->
-      <a class="card reveal protected" data-cat="appifany" href="https://gitlab.infinitysoftsystems.com/appifany/appifany-goodsamapp" target="_blank" rel="noopener">
-        <div class="card-top"><div><div class="card-name">Good Sam App</div><div class="card-org">appifany</div></div><div class="card-arrow">↗</div></div>
-        <div class="card-stack">Flutter</div>
-        <div class="card-meta">Updated 2 months ago</div>
-      </a>
-      <a class="card reveal protected" data-cat="appifany" href="https://gitlab.infinitysoftsystems.com/appifany/artesian-loyalty-flutter" target="_blank" rel="noopener">
-        <div class="card-top"><div><div class="card-name">Artesian Loyalty</div><div class="card-org">appifany</div></div><div class="card-arrow">↗</div></div>
-        <div class="card-stack">Flutter</div>
-        <div class="card-meta">Updated 11 months ago</div>
-      </a>
-      <a class="card reveal protected" data-cat="appifany" href="https://gitlab.infinitysoftsystems.com/aruninf/become-secure-app" target="_blank" rel="noopener">
-        <div class="card-top"><div><div class="card-name">Become Secure App</div><div class="card-org">aruninf</div></div><div class="card-arrow">↗</div></div>
-        <div class="card-stack">Flutter</div>
-        <div class="card-meta">Updated 11 months ago</div>
-      </a>
-      <a class="card reveal protected" data-cat="appifany" href="https://gitlab.infinitysoftsystems.com/aruninf/become-secure-cms" target="_blank" rel="noopener">
-        <div class="card-top"><div><div class="card-name">Become Secure CMS</div><div class="card-org">aruninf</div></div><div class="card-arrow">↗</div></div>
-        <div class="card-stack">Admin / CMS</div>
-        <div class="card-meta">Updated 11 months ago</div>
-      </a>
-      <a class="card reveal protected" data-cat="appifany" href="https://gitlab.infinitysoftsystems.com/aruninf/bright-vox-flutter" target="_blank" rel="noopener">
-        <div class="card-top"><div><div class="card-name">Bright Vox</div><div class="card-org">aruninf</div></div><div class="card-arrow">↗</div></div>
-        <div class="card-stack">Flutter</div>
-        <div class="card-meta">Updated 11 months ago</div>
-      </a>
-      <a class="card reveal protected" data-cat="appifany" href="https://gitlab.infinitysoftsystems.com/appifany/check-in-chick" target="_blank" rel="noopener">
-        <div class="card-top"><div><div class="card-name">Check In Chick</div><div class="card-org">appifany</div></div><div class="card-arrow">↗</div></div>
-        <div class="card-stack">Flutter</div>
-        <div class="card-meta">Updated 11 months ago</div>
-      </a>
-      <a class="card reveal protected" data-cat="appifany" href="https://gitlab.infinitysoftsystems.com/appifany/clear-sky-ios" target="_blank" rel="noopener">
-        <div class="card-top"><div><div class="card-name">Clear Sky</div><div class="card-org">appifany</div></div><div class="card-arrow">↗</div></div>
-        <div class="card-stack">iOS Native</div>
-        <div class="card-meta">Updated 11 months ago</div>
-      </a>
-      <a class="card reveal protected" data-cat="appifany" href="https://gitlab.infinitysoftsystems.com/connectable/connectable-flutter-app" target="_blank" rel="noopener">
-        <div class="card-top"><div><div class="card-name">ConnectAble</div><div class="card-org">connectable</div></div><div class="card-arrow">↗</div></div>
-        <div class="card-stack">Flutter</div>
-        <div class="card-meta">Updated 1 week ago</div>
-      </a>
-      <a class="card reveal protected" data-cat="appifany" href="https://gitlab.infinitysoftsystems.com/appifany/cosmo-ios-app" target="_blank" rel="noopener">
-        <div class="card-top"><div><div class="card-name">Cosmo iOS</div><div class="card-org">appifany</div></div><div class="card-arrow">↗</div></div>
-        <div class="card-stack">iOS Native</div>
-        <div class="card-meta">Updated 11 months ago</div>
-      </a>
-      <a class="card reveal protected" data-cat="appifany" href="https://gitlab.infinitysoftsystems.com/aruninf/flutter_bloc_sample" target="_blank" rel="noopener">
-        <div class="card-top"><div><div class="card-name">Flutter BLoC Sample</div><div class="card-org">aruninf</div></div><div class="card-arrow">↗</div></div>
-        <div class="card-stack">Flutter · BLoC</div>
-        <div class="card-meta">Updated 10 months ago</div>
-      </a>
-      <a class="card reveal protected" data-cat="appifany" href="https://gitlab.infinitysoftsystems.com/aruninf/goalsfmapp" target="_blank" rel="noopener">
-        <div class="card-top"><div><div class="card-name">Goals FM App</div><div class="card-org">aruninf</div></div><div class="card-arrow">↗</div></div>
-        <div class="card-stack">Flutter</div>
-        <div class="card-meta">Updated 11 months ago</div>
-      </a>
-      <a class="card reveal protected" data-cat="appifany" href="https://gitlab.infinitysoftsystems.com/aruninf/goalsfmcms" target="_blank" rel="noopener">
-        <div class="card-top"><div><div class="card-name">Goals FM CMS</div><div class="card-org">aruninf</div></div><div class="card-arrow">↗</div></div>
-        <div class="card-stack">Admin / CMS</div>
-        <div class="card-meta">Updated 10 months ago</div>
-      </a>
-      <a class="card reveal protected" data-cat="appifany" href="https://gitlab.infinitysoftsystems.com/appifany/job-matched-app" target="_blank" rel="noopener">
-        <div class="card-top"><div><div class="card-name">Job Matched App</div><div class="card-org">appifany</div></div><div class="card-arrow">↗</div></div>
-        <div class="card-stack">Flutter</div>
-        <div class="card-meta">Updated 11 months ago</div>
-      </a>
-      <a class="card reveal protected" data-cat="appifany" href="https://gitlab.infinitysoftsystems.com/aruninf/jobwish-app" target="_blank" rel="noopener">
-        <div class="card-top"><div><div class="card-name">JobWish App</div><div class="card-org">aruninf</div></div><div class="card-arrow">↗</div></div>
-        <div class="card-stack">Flutter · OpenAI API</div>
-        <div class="card-meta">Updated 9 months ago</div>
-      </a>
-      <a class="card reveal protected" data-cat="appifany" href="https://gitlab.infinitysoftsystems.com/aruninf/jobwish-app-new" target="_blank" rel="noopener">
-        <div class="card-top"><div><div class="card-name">JobWish App — v2</div><div class="card-org">aruninf</div></div><div class="card-arrow">↗</div></div>
-        <div class="card-stack">Flutter · OpenAI API</div>
-        <div class="card-meta">Updated 1 hour ago · active</div>
-      </a>
-      <a class="card reveal protected" data-cat="mentalfloss" href="https://gitlab.infinitysoftsystems.com/mentalfloss/mentalfloss_admin" target="_blank" rel="noopener">
-        <div class="card-top"><div><div class="card-name">MentalFloss — Admin</div><div class="card-org">mentalfloss</div></div><div class="card-arrow">↗</div></div>
-        <div class="card-stack">Admin / CMS</div>
-        <div class="card-meta">Updated 6 months ago</div>
-      </a>
-      <a class="card reveal protected" data-cat="mentalfloss" href="https://gitlab.infinitysoftsystems.com/mentalfloss/mentalfloss_be" target="_blank" rel="noopener">
-        <div class="card-top"><div><div class="card-name">MentalFloss — Backend</div><div class="card-org">mentalfloss</div></div><div class="card-arrow">↗</div></div>
-        <div class="card-stack">Backend API</div>
-        <div class="card-meta">Updated 1 month ago</div>
-      </a>
-      <a class="card reveal protected" data-cat="mentalfloss" href="https://gitlab.infinitysoftsystems.com/mentalfloss/mentalfloss_react_fe" target="_blank" rel="noopener">
-        <div class="card-top"><div><div class="card-name">MentalFloss — Web</div><div class="card-org">mentalfloss</div></div><div class="card-arrow">↗</div></div>
-        <div class="card-stack">React</div>
-        <div class="card-meta">Updated 1 month ago</div>
-      </a>
-      <a class="card reveal protected" data-cat="mentalfloss" href="https://gitlab.infinitysoftsystems.com/mentalfloss/mentalfloss_mobile" target="_blank" rel="noopener">
-        <div class="card-top"><div><div class="card-name">MentalFloss — Mobile</div><div class="card-org">mentalfloss</div></div><div class="card-arrow">↗</div></div>
-        <div class="card-stack">React Native</div>
-        <div class="card-meta">Updated 1 week ago</div>
-      </a>
-      <a class="card reveal protected" data-cat="appifany" href="https://gitlab.infinitysoftsystems.com/aruninf/mind-reset" target="_blank" rel="noopener">
-        <div class="card-top"><div><div class="card-name">Mind Reset</div><div class="card-org">aruninf</div></div><div class="card-arrow">↗</div></div>
-        <div class="card-stack">Flutter</div>
-        <div class="card-meta">Owner</div>
-      </a>
-      <a class="card reveal protected" data-cat="appifany" href="https://gitlab.infinitysoftsystems.com/aruninf/note-app-react-native" target="_blank" rel="noopener">
-        <div class="card-top"><div><div class="card-name">Note App</div><div class="card-org">aruninf</div></div><div class="card-arrow">↗</div></div>
-        <div class="card-stack">React Native</div>
-        <div class="card-meta">Updated 10 months ago</div>
-      </a>
-      <a class="card reveal protected" data-cat="appifany" href="https://gitlab.infinitysoftsystems.com/appifany/posyard-mobile-app" target="_blank" rel="noopener">
-        <div class="card-top"><div><div class="card-name">PosYard</div><div class="card-org">appifany</div></div><div class="card-arrow">↗</div></div>
-        <div class="card-stack">Mobile</div>
-        <div class="card-meta">Updated 11 months ago</div>
-      </a>
-      <a class="card reveal protected" data-cat="appifany" href="https://gitlab.infinitysoftsystems.com/appifany/take-a-plate-flutter" target="_blank" rel="noopener">
-        <div class="card-top"><div><div class="card-name">Take A Plate</div><div class="card-org">appifany</div></div><div class="card-arrow">↗</div></div>
-        <div class="card-stack">Flutter</div>
-        <div class="card-meta">Updated 2 weeks ago</div>
-      </a>
-      <a class="card reveal protected" data-cat="appifany" href="https://gitlab.infinitysoftsystems.com/appifany/the-goat-app" target="_blank" rel="noopener">
-        <div class="card-top"><div><div class="card-name">The Goat App</div><div class="card-org">appifany</div></div><div class="card-arrow">↗</div></div>
-        <div class="card-stack">iOS Native</div>
-        <div class="card-meta">Updated 11 months ago</div>
-      </a>
-      <a class="card reveal protected" data-cat="appifany" href="https://gitlab.infinitysoftsystems.com/appifany/yourfishapp" target="_blank" rel="noopener">
-        <div class="card-top"><div><div class="card-name">Your Fish — App</div><div class="card-org">appifany</div></div><div class="card-arrow">↗</div></div>
-        <div class="card-stack">Flutter · Firebase</div>
-        <div class="card-meta">Updated 11 months ago</div>
-      </a>
-      <a class="card reveal protected" data-cat="appifany" href="https://gitlab.infinitysoftsystems.com/appifany/yourfishcms" target="_blank" rel="noopener">
-        <div class="card-top"><div><div class="card-name">Your Fish — CMS</div><div class="card-org">appifany</div></div><div class="card-arrow">↗</div></div>
-        <div class="card-stack">Admin / CMS</div>
-        <div class="card-meta">Owner</div>
-      </a>
-      <div class="card reveal protected" data-cat="whitetower">
-        <div class="card-top"><div><div class="card-name">Disport</div><div class="card-org">whitetower digital</div></div><div class="card-arrow">↗</div></div>
-        <div class="card-stack">React Native</div>
-        <div class="card-meta">Delivered</div>
-      </div>
-      <div class="card reveal protected" data-cat="whitetower">
-        <div class="card-top"><div><div class="card-name">Medhub</div><div class="card-org">whitetower digital</div></div><div class="card-arrow">↗</div></div>
-        <div class="card-stack">React Native</div>
-        <div class="card-meta">Delivered</div>
-      </div>
-      <div class="card reveal protected" data-cat="whitetower">
-        <div class="card-top"><div><div class="card-name">T1</div><div class="card-org">whitetower digital</div></div><div class="card-arrow">↗</div></div>
-        <div class="card-stack">React Native</div>
-        <div class="card-meta">In progress</div>
-      </div>
-    </div>
+    <div class="grid" id="grid"></div>
   </div>
 </section>
 
@@ -299,10 +149,7 @@
       <h2>Client recognition</h2>
       <div class="sec-tag">Direct feedback</div>
     </div>
-    <div class="quote-card protected">
-      "Superstar. Quite happy with Arun — delivered Disport and Medhub on time."
-      <div class="quote-meta">— Villar, client</div>
-    </div>
+    <div id="quoteContainer"></div>
   </div>
 </section>
 
