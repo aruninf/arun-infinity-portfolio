@@ -2,6 +2,8 @@
 
 Static portfolio page showcasing 29 shipped projects across Flutter, React Native, and iOS Native at Infinity Soft Systems.
 
+🌐 **Live:** https://aruninf.github.io/arun-infinity-portfolio/
+
 ## Files
 
 - `index.html` — markup
