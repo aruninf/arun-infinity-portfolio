@@ -19,6 +19,7 @@
       <a href="#portfolio">Portfolio</a>
       <a href="#recognition">Recognition</a>
     </div>
+    <button class="nav-cta" id="unlockBtn" aria-label="Unlock protected content">🔒</button>
     <a class="nav-cta" href="https://github.com/aruninf?tab=repositories" target="_blank" rel="noopener">GitHub ↗</a>
   </div>
 </nav>
@@ -111,7 +112,7 @@
   </div>
 </section>
 
-<section class="reveal">
+<section class="reveal protected">
   <div class="wrap">
     <div class="sec-head">
       <h2>Currently</h2>
@@ -273,17 +274,17 @@
         <div class="card-stack">Admin / CMS</div>
         <div class="card-meta">Owner</div>
       </a>
-      <div class="card reveal" data-cat="whitetower">
+      <div class="card reveal protected" data-cat="whitetower">
         <div class="card-top"><div><div class="card-name">Disport</div><div class="card-org">whitetower digital</div></div><div class="card-arrow">↗</div></div>
         <div class="card-stack">React Native</div>
         <div class="card-meta">Delivered</div>
       </div>
-      <div class="card reveal" data-cat="whitetower">
+      <div class="card reveal protected" data-cat="whitetower">
         <div class="card-top"><div><div class="card-name">Medhub</div><div class="card-org">whitetower digital</div></div><div class="card-arrow">↗</div></div>
         <div class="card-stack">React Native</div>
         <div class="card-meta">Delivered</div>
       </div>
-      <div class="card reveal" data-cat="whitetower">
+      <div class="card reveal protected" data-cat="whitetower">
         <div class="card-top"><div><div class="card-name">T1</div><div class="card-org">whitetower digital</div></div><div class="card-arrow">↗</div></div>
         <div class="card-stack">React Native</div>
         <div class="card-meta">In progress</div>
@@ -298,7 +299,7 @@
       <h2>Client recognition</h2>
       <div class="sec-tag">Direct feedback</div>
     </div>
-    <div class="quote-card">
+    <div class="quote-card protected">
       "Superstar. Quite happy with Arun — delivered Disport and Medhub on time."
       <div class="quote-meta">— Villar, client</div>
     </div>
@@ -316,6 +317,16 @@
   </div>
 </footer>
 
+<div id="authModal" class="modal-overlay">
+  <div class="modal">
+    <div class="modal-icon">🔒</div>
+    <h3>Protected content</h3>
+    <p>Enter the passcode shared with you to view current-client details.</p>
+    <input type="password" id="passcodeInput" placeholder="Enter passcode" autocomplete="off">
+    <div class="auth-error" id="authError"></div>
+    <button id="authSubmit" class="btn btn-solid" style="width:100%;justify-content:center;">Unlock</button>
+  </div>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
