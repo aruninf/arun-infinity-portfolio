@@ -214,10 +214,14 @@ function setupFilters(){
 }
 
 function injectProtectedContent(){
+  document.querySelectorAll('.lock-card').forEach(el => el.remove());
+
   const curr = document.getElementById('currentlySection');
   curr.style.display = '';
   curr.classList.add('in');
-  document.getElementById('currentlyContent').innerHTML = PROTECTED_HTML.currently;
+  const currContent = document.getElementById('currentlyContent');
+  currContent.classList.add('journey');
+  currContent.innerHTML = PROTECTED_HTML.currently;
 
   document.getElementById('grid').innerHTML = PROTECTED_HTML.cards;
   document.getElementById('quoteContainer').innerHTML = PROTECTED_HTML.quote;
@@ -254,6 +258,15 @@ unlockBtn.addEventListener('click', ()=>{
   passcodeInput.value = '';
   authError.textContent = '';
   passcodeInput.focus();
+});
+
+document.querySelectorAll('.lock-card').forEach(card => {
+  card.addEventListener('click', () => {
+    modal.classList.add('open');
+    passcodeInput.value = '';
+    authError.textContent = '';
+    passcodeInput.focus();
+  });
 });
 
 modal.addEventListener('click', (e)=>{
